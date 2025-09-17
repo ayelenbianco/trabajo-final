@@ -1,28 +1,26 @@
- 
  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primer archivo Html.</title>
-   <link rel="stylesheet" href="Css/index.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+   <link rel="stylesheet" href="Css/trabajo.css">
+
 </head>
 
-<body>
+     <body>
     <header>
         <div class="form-header">
             <form class="form-login p-3 bg-light shadow-sm rounded-3 h-1">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                   
+                    <div id="emailHelp" class="form-text">Su informacion sera protegida.</div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                     <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                 <div id="emailHelp" class="form-text">Su info no sera compartida</div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Mantener sesion abierta</label>
@@ -30,117 +28,139 @@
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </div>
-    </header>
-
-
-<body>
- <header>
-      <h1 class="titulo-header">Le Petit Geant</h1>
-        <img src="" alt="le-petit" class="le-petit">
+         <img src="Imagenes/arte.png"   alt="logo-empresa" class="logo-empresa">
    </header>
-  <button id="boton-menu"> MENU </button>
-  <nav id="menu" class="">
-  <ul class="quitar">
-  <li><a href="#">Inicio</a></li>
-  <li class="menu-item" id="menu-item"><a href="infoimportante.html" target="_blank">Info Importante
-      <ul class="submenu" id="submenu">
-  <li><a href="#">Contactos</a></li>
-     </ul>
-   </nav>
-</header>
-      
+<button id="cambiarFondo" class="botonColor mt-3 p-2"><i class="bi bi-moon-stars-fill"></i></button>
+<nav>
+        <ul class="menu1">
+            <li><a href="prendasincreibles.html">Prendas Collares y Pretales</a></li>
+            <li><a href="camasyplazas.html">Camas y Plazas de juegos</a></li>
+            <li><a href="petshop.html">Pet Shop</a></li>
+             <li><a href="importante.html">Info Importante</a></li>
+   </ul> 
+    </nav>
+</main>
+
+
+<article class="info-pagina">
+   <img src="Imagenes/gatoperro.jpg" alt="logo-pagina" class="pagina-logo">
+   <div class="pagina-texto">
+        <h3>Sobre Nosotros</h3>
+        <p>Somos una empresa dedicada a el bienestar de tu mascota. Nuestros productos de excelente calidad, cuidadosamente seleccionados, hacen notar nuestro amor por ellos. Te damos la Bienvenida a explorar la magia..</p>
+   </div>
+</article>
+
+
 <main>
     <div class="secciones">
-        <section class="cursos">
+        <section class="animales">
         <div class="card" style="width: 100%;">
             <div class="card-img">
-                <img src="" class="img-card" alt="cursoCocina">
+                <img src="Imagenes/gatomaripo.jpg" width="400px" height="400px"      class="img-card" alt="gato">
             </div>
+
             <div class="card-body">
-                <h5 class="card-title">Promos disponibles</h5>
-                <p class="card-text">Haz click para ver las promos de 10% de descuento</p>
-                <a href="" class="btn btn-primary"> Chequea...</a>
+                <h5 class="card-title">Articulos para Felinos</h5>
+                <p class="card-text">Sumergite en un mundo lleno de magia</p>
+                <a href="gatos.html" class="btn btn-primary"> Ver mas!</a>
             </div>
         </div>
         </section>
+
         <section class="compras">
         <div class="card" style="width: 100%;">
             <div class="card-img">
-                <img src="Imagenes/6edf98da7ad571a9d9bea253dda9ece5.jpg" class="img-card" alt="logoCoop">
+                <img src="Imagenes/perromariposa.jpg" width="400px" height="400px"       class="img-card" alt="perros">
             </div>
+
             <div class="card-body">
-                <h5 class="card-title"></h5>
-                <p class="card-text"></p>
-                <a href="le.petit " class="btn btn-primary">Hace click.</a>
+                <h5 class="card-title">Articulos para Caninos</h5>
+                <p class="card-text">Conoce la excelente calidad en nuestros productos</p>
+                <a href="perros.html " class="btn btn-primary">Ver mas!</a>
             </div>
         </div>
-        </section>
+    </section>
+  </div>
+</main>
 
 
+ <button id="btn-warning">ATENCION</button>
+<div class="banco">
+     <h2 class="banco">Los Viernes aprovechá el 15% menos en Banco ICBC!</h2>
+    <img src="Imagenes/R.png" alt="enlace a google" class="enlace">
+    <a href="https://www.accessbanking.com.ar/RetailHomeBankingWeb/init.do?a=b&cm_mmc=icbc-_-access-_-header-_-onlinebanking" target="_blank" class="enlace2">Enlace a google</a>
+    </main> 
+</div>
 
-
-
-<main>
-  <p id="parrafo"></p>
-  <div class="container text-center mt-3">
-     <h2>Calculadora de Iva</h2>
-  <input type="number" name="" id="precioInput" placeholder="Ingrese el precio" class="form-control w-50 mx-auto mb-3 ">
-  <button type="button" class="btn btn-primary mb-2 p-2" onclick="precioFinal()">Calcular</button>
+<div class="calculadoraiva">
+  <h2>Calculadora de Iva.</h2>
+  <input type="number" name="" id="precioInput" placeholder="Ingrese el precio" class="preciofinal">
+  <button type="buton" class="calcu" onclick="precioFinal()">Calcular</button>
   <p id="resultado" class="mt-4 fw-bold"></p>
 </div>
 
-    <input type="number" id="producto1" placeholder="Precio 1">
+  <input type="number" id="producto1" placeholder="Precio 1" class="precio1">
+  <input type="number" id="producto2" placeholder="Precio 2" class="precio2">
+  <button id="calcular" class="calculadora">Calcular.</button>
+  <div id="total">
+</div>
+</div>
+</main>
 
-    <input type="number" id="producto2" placeholder="Precio 2">
-
-    <button id="calcular">Calcular.</button>
-    <div id="total">
-   </div>
- </main>
-
-
-<aside class="galeria">
-    <div id="carouselExample" class="carrusel-galeria carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="Imagenes/" class="d-block w-100" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="" class="d-block w-100" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="" class="d-block w-100" alt="">
-    </div>
+ <div class="caja" id="caja" >
 </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
- </button>
-     <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                 <span class="visually-hidden">Next</span>
-     </button>
-   </div>
-</aside>
-
-<button id="cambiarFondo" class="botonColor mt-3 p-2"><i class="bi bi-moon-stars-fill"></i></button>
- 
 <footer>
-    <form>
-     <form action="" id="mi-formulario">
-     <label for="">Nombre</label>
+    <form action="" method="post"  class="formulario">
+        <fieldset>
+            <legend>Complete con sus Datos</legend>
+            <div class="form-columns"></div>
+                <div class="fila">
+                    <label for="name">Nombre</label> 
+                    <input type="text" id="name" name="nombre" placeholder="Nombre">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido">
+                </div>
+                <div class="fila"></div>
+                    <label for="mail">Correo Electronico.</label>
+                    <input type="email" id="mail">
+                    <label for="password">Contraseña.</label>
+                    <input type="password" name="contraseña" maxlength="10" id="password" required>
+                </div>
+                <div class="fila"></div>
+                    <label for="dni">Documento</label>
+                    <input type="number" id="dni">
+                    <label for="date">Fecha Nac.</label>
+                    <input type="date" name="fecha_nacimiento" id="date">
+                </div>
+            </div>
+            <div class="form-file"></div>
+            </div>
+            <div class="form-comments"></div>
+                <label for="comentarios">Contanos en que podemos ayudarte</label>
+                <textarea name="texto" id="comentarios" cols="10" rows="10"></textarea>
+            </div>
+            <div class="form-buttons"></div>
+                <input type="submit" value="Enviar" class="boton">
+                <input type="reset" value="Restablecer" class="boton">
+            </div>
+        </fieldset>
+       </form>
+     </footer>
+      
+        <script src="Java/tf.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+</body>
+</html>
 
-     <input type="text" name="name" id="nombre">
-     <span id='error' class="error"></span>
 
-     <button type="submit">Enviar</button>
-</form>
 
-     <button id="enter">Comprar</button>
- </footer>
 
-     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-     <script src="Java/tf.js"></script>
-     </body>
+
+
+
+
+
+

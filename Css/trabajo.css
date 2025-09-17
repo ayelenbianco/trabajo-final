@@ -1,5 +1,796 @@
+/*vamos a arrancar la primera linea de css con el indicador universal.
+etiqueta:llama a la etiqueta directamente por el nombre.
+clase: HTML USO class(atributo) . CSSS USO  .(nombre de la clase).
+utilizo el background-color: color de fondo
+background:fondo de cualquier caja.
+font-family:cambia familia de la fuente.
+color:cambia el color de cualquier estructura.
+font-size:cambio tamano a la fuente.
+font-weight:ancho de la fuente.
+font-style:cambia el estilo de la fuente.*
+border: aplica bordes a las cajas. Propiedades:
+border-width: ancho del borde.valores px,em,hv
+border-style: estilo del borde. Valores:solid,double,dotted,dashed.
+border-color:color del borde.
+border-radius: redondea los bordes de la caja. Valores: px,%,etc.
+width: ancho de cualquier elementos o caja.
+height:alto del elemento o caja. valores pixeles,%,em,hv.
+max-width:ancho maximo que puedo darle a una caja.
+text-align: alinear los elementos en el eje horizontal. valores: left center right.
+text-decoration: es darle lineas al texto. valores: underline/none/
+line trought/overline.
+text-transform: transformar minuscula a mayuscula y mayuscula a minuscula de la fuente. valores:uppercase/lowercase.
+fuente externa: usamos google fonts.Copiamos codigo Get embed code.
+box-sizing:contiene el tamaño de las cajas al tomar la suma del padding o del margin. Dos valores content-box y border
+-box.
+Unidades de Medida:
+rem:
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+    padding: 0;/*Reseteo la configuracion de los navegadores*/
+    margin: 0;/*Reseteo la configuracion de los navegadores*/
+    font-family:"Roboto","PT Serif";
+    box-sizing:border-box ;/* contiene el ancho(width) y alto (height) de la caja adhiriendo el margin y el padding.*/
+
+}
+
+body {
+color:#333333;
+padding: 20px;
+background-color: #fdfdfd;}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color:#cfb3b6 ;
+    width: 100%;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    flex-direction: row-reverse;}
+
+.logo-empresa{
+  width: 400px;
+  height: 280px;
+  border-radius: 0.8em;
+  text-align: center;
+  flex:0 0 200px;
+}
+
+.form-login{
+  max-width: 200px;
+  font-size: 0.8em;
+  display: flex;
+flex-direction: column;}
+
+.form-login .form-label{
+font-size: 0.9em;}
+
+.form-login .form-text{
+
+font-size: 0.9em; }
+
+.form-login input{
+font-size:xx-small;}
+
+.form-login button{
+padding:0.3em 0.7em;
+font-size: 0.75em;}
+
+main{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+padding:1.4rem;
+gap: 1em;
+  border: 2px solid  rgb(139, 139, 139) ;
+  margin: 0 auto;
+  width: 95%;
+  margin-bottom: 10px;}
+
+main section,
+main article,
+main nav
+
+{border: 1px solid #ccc ;
+padding: 1.25em;
+text-align: center;
+
+ display: flex;
+  border:1px solid rgb(12, 12, 12);
+  border-radius: 50px;
+  background: #f9f9f9;
+  padding:0.8em;
+  align-items: center;
+  gap:1em;
+
+    flex:0 0 200px;
+    max-width: 500px;
+    border-radius: 10px;
+    height: auto;
+    box-shadow: 0px 2px 5px rgb(4, 4, 4);  
+}
+
+.secciones{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;}
+
+.secciones section{
+    flex: 1 1 48%;
+    min-height: 300px;
+    box-sizing: border-box;
+    gap: 1em;
+    padding: 1em;
+    border:1px solid #ccc;}
+
+.card-img{
+    height: 450px;
+    overflow: hidden;}
+.card-title{
+    color: #5e4748;
+
+
+}
+.card-body{
+    font-family: 600 italian;
+    color: #a77173;
+}
+.card-text{
+    color: #a77173;
+}
+.btn-primary{
+    color: #5e4748
+ }
+.img-card{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    text-align: center;}
+
+.article-banco{
+    color: #a77173;
+    border: 2px solid rgb(139, 139, 139);
+    text-align: center;
+    font-family: 600 italic;
+    width: 85%;
+    padding:1.25em;
+    
+margin: 1em auto;
+display: flex;
+  border:1px solid rgb(12, 12, 12);
+  border-radius: 10px;
+  background: #f9f9f9;
+  padding:0.8em;
+  align-items: center;
+  gap:1em; }
+
+nav {
+  border-radius: 10px;
+  border: 2px solid rgb(226, 209, 209);
+  padding:20px ;
+  margin:10px 0;
+  background-color: #c99b9c;}
+ 
+.menu1{
+
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+list-style-type: none;
+padding: 0;
+gap: 1em;
+color: #a77173;}
+
+ 
+.menu1 li{
+background-color: #ffffff;
+width: 10em;
+border-radius: 10px;
+overflow: hidden;}
+
+nav .menu1 li a{
+text-decoration: none;
+display: block;
+padding: 20px;
+text-align: center;
+font-weight: 500;
+transition:color 0.8s ease;
+}
+
+.menu1 li a:hover{
+color:rgb(227, 140, 25);
+}
+
+.info-pagina{
+  display: flex;
+  border:1px solid rgb(12, 12, 12);
+  border-radius: 10px;
+  background: #f9f9f9;
+  padding:0.8em;
+  align-items: center;
+  gap:1em;
+}
+.pagina-logo{
+    flex:0 0 200px;
+    max-width: 300px;
+    border-radius: 10px;
+    height: auto;
+    box-shadow: 0px 2px 5px rgb(4, 4, 4);  
+}
+
+.info-texto{
+    flex:1 1 300px;
+    color:#333;
+}
+.info-pagina h3{
+    color:#c99b9c;
+    font-size: 1.2em;
+    margin-top:0.2em;
+    font-family: 600 italic;
+}
+.info-pagina p{
+    margin: 0.5em 0em;
+    line-height: 1.5;
+    font-family: 600 italic;
+}
+
+
 .h1{
-    color: #756f4b;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: center;
+    text-align: center;
+    color: #a77173;
+
+}
+
+label {
+color: #5e4748;
+font-weight:lighter;
+font-family: 700 italic;
+}
+
+input{
+  color: #574d4d
+ 
+}
+input,textarea{
+width: 100%;
+padding: 0.5rem;
+margin: 0.6rem;
+border-radius: 8px;
+border: 1px solid #ccc;
+
+}
+ 
+legend {
+font-size: 25px;
+font-style: bold;
+color: #a77173;
+text-align: center;
+}
+
+
+
+footer{
+width: 90%;
+flex:0 0 200px;
+    max-width: 300px;
+    border-radius: 10px;
+    height: auto;
+    box-shadow: 0px 2px 5px rgb(4, 4, 4);  
+}
+.calculadoraiva{
+     justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #5e4748;
+  display: flex;
+  border:1px solid rgb(83, 45, 45);
+  border-radius: 30px;
+  background: #f9f9f9;
+  padding: 1em;
+  align-items: center;
+  gap: 2px;
+  flex:0 0 600px;
+    max-width: 2000px;
+    border-radius: 10px;
+    height:fit-content;
+    box-shadow: 0px 2px 5px rgb(16, 16, 16);  
+}
+.calcu{
+     justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #5e4748;
+  display: flex;
+  border:1px solid rgb(83, 45, 45);
+  border-radius: 30px;
+  background: #f9f9f9;
+  padding: 1em;
+  align-items: center;
+  gap: 2px;
+  flex:0 0 600px;
+    max-width: 1000px;
+    border-radius: 10px;
+    height:fit-content;
+    box-shadow: 0px 2px 5px rgb(16, 16, 16);  
+}
+.calculadora{
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #5e4748;
+  display: flex;
+  border:1px solid rgb(83, 45, 45);
+  border-radius: 30px;
+  background: #f9f9f9;
+  padding: 1em;
+  align-items: center;
+  gap: 2px;
+  flex:0 0 600px;
+    max-width: 1000px;
+    border-radius: 10px;
+    height:fit-content;
+    box-shadow: 0px 2px 5px rgb(16, 16, 16);  
+
+}
+.formulario {
+    text-align: center;
+border-color:#a77173;
+border-width: 4px;
+border-style: solid;
+border-radius:10px ;
+margin: 2em auto;
+box-sizing: border-box;
+padding: 1em 2em;
+max-width: 1000px;
+}
+.enlace{
+    font-family: 'Times New Roman', Times, serif;
+    flex:0 0 200px;
+    max-width: 300px;
+    border-radius: 10px;
+    height: auto;
+    box-shadow: 0px 2px 5px rgb(4, 4, 4);  
+}
+.enlace2{
+   font-family:Verdana, Geneva, Tahoma, sans-serif 
     }
+
+.button{
+    justify-content: center;
+background-color: #5e4748;
+color: #000;
+padding: 0.8em;
+border: none;
+}
+
+
+.banco{
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #d33535;
+  display: flex;
+  border:1px solid rgb(83, 45, 45);
+  border-radius: 30px;
+  background: #f9f9f9;
+  padding: 1em;
+  align-items: center;
+  gap: 2px;
+  flex:0 0 600px;
+    max-width: 1000px;
+    border-radius: 10px;
+    height:fit-content;
+    box-shadow: 0px 2px 5px rgb(16, 16, 16);  
+}
+
+.form-columns .fila{
+display: flex;
+align-items: center;
+gap: 1.5em;
+margin-bottom: 1.5em;
+}
+
+.fila label,
+.fila input{
+ 
+color: #5e4748;
+flex:1 1 48%;
+width: auto;
+margin: 0;
+
+}
+
+.form-file{
+ 
+  margin-top: 10px;
+  margin-bottom: 1.5em;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-comments textarea{
+  display: block;
+width:90%;
+margin:10px auto;
+
+}
+.form-comments label{
+display: flex;
+
+}
+.form-buttons{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: #756f4b;
+display: flex;
+justify-content: center;
+
+
+}
+.boton{
+width: 150px;
+padding: 5px;
+border-radius: 10px;
+font-weight: bold;
+margin:8px 10px ;
+
+ }
+button{ justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #5e4748;
+  display: flex;
+  border:1px solid rgb(83, 45, 45);
+  border-radius: 30px;
+  background: #f9f9f9;
+  padding: 1em;
+  align-items: center;
+    max-width: 600px;
+    border-radius: 10px;
+    height:fit-content;
+    box-shadow: 0px 2px 5px rgb(16, 16, 16);  
+justify-content: center;
+background-color: #a77173;
+text-align: center;
+padding: 0.8em;
+}
+
+
+
+body.tema-claro{
+background-color: #ffffff;
+color: #333333;
+
+}
+body.tema-oscuro{
+background-color: #333333;
+color: #ffffff;
+
+
+}
+.botonColor{
+padding: 0.8em 1em;
+border:none;
+border-radius: 10px;
+cursor: pointer;
+transition: color 0.2s ease, transform 0.2s ease;
+
+}
+.botonColor:hover{
+
+  transform:scale(1.2);
+}
+
+.botonColor i{
+transition: transform 0.2s ease,color 0.2s ease;
+
+}
+
+.tema-claro.botonColor{
+background-color: #ffffff;
+color: #333333;
+}
+.tema-oscuro.botonColor{
+background-color: #333333;
+color: #ffffffff;
+}
+
+footer{
+    border: 1px solid rgb(12, 12, 12);
+    text-align: center;
+     justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  border:1px solid rgb(83, 45, 45);
+  border-radius: 30px;
+  background: #f9f9f9;
+  padding: 1em;
+  align-items: center;
+  gap: 2px;
+  flex:0 0 100px;
+    max-width: 800px;
+    border-radius: 10px;
+    height:fit-content;
+    box-shadow: 0px 2px 5px rgb(16, 16, 16);  
+}
+
+
+@media(min-width:481px) and (max-width:768px){
+    header{
+        justify-content: center;
+    }
+    .titulo-header{
+        display:none;
+    }
+    .logo-empresa{
+        flex: 1 1 200px;
+        order: -1;
+    }
+    .form-header{
+        width: 300px;
+        order: 2;
+    }
+    .form-login{
+        max-width: 300px;
+        width: 100%;
+    }
+    .secciones{
+        flex-direction: column;
+    }
+    .menu1 li{
+        width: 60%;
+    }
+    .menu1 li a{
+        font-size: 1.3rem;
+    }
+    .info-pagina{
+        flex-direction: column;
+    }
+    .ipfl-logo{
+        max-width: 90%;
+    }
+    .info-pagina .pagina-texto h3{
+        text-align: center;
+    }
+    .carousel-item{
+        height: 415px;
+    }
+    .carrusel-galeria img{
+        height: 100%;
+        width: auto;
+    }
+    footer{
+        margin: 2em auto;
+    }
+    .formulario{
+        width: 100%;
+    }
+    .form-columns .fila{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5em;
+        margin-bottom: 0px;
+    }
+    .form-columns .fila input{
+        margin-bottom: 1em;
+    }
+}
+@media(max-width:480px){
+  header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#e8e8f2 ;
+  width: 100%;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 1em;
+  }
+  .titulo-header{
+    display: none;
+  }
+  .logo-empresa{
+  width: 280px;
+  height: auto;
+  border-radius: 0.8em;
+  flex: 0 0 200px;
+  order: -1;
+  margin: 0 auto;
+}
+.form-login{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    font-size: 0.8em;
+    flex-direction: column;
+    align-items: center;
+}
+.form-login .form-label{
+  font-size: 0.9em;
+
+
+}
+.form-login .form-text{
+  font-size: 0.9em;
+ 
+}
+.form-login input{
+  font-size: 0.9em;
+   width: 280px;
+}
+.form-login button{
+  padding: 0.3em 0.8em;
+  font-size: 0.9em;
+  width: 200px;
+ 
+}
+.info-pagina{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: #f9f9f9;
+  padding: 0,8em;
+  align-items: center;
+  gap: 1em;
+}
+.pagina-logo{
+  flex: 0 0 200px;
+  max-width: 300px;
+  border-radius: 10px;
+  height: auto;
+  box-shadow: 0px 2px 5px rgb(0,0,0.1);
+  margin: 0.5em auto;
+}
+.info-texto{
+  flex: 1 1 300px;
+  color: #333;
+}
+.info-pagina h3{
+  color: #0d6efd;
+  font-size: 1.2em;
+  margin-top: 0.2em;
+  text-decoration: underline;
+  text-align: center;
+}
+.info-pagina p{
+  padding:0.8em ;
+  margin: 0.8em;
+}
+.galeria{
+margin-top: 1em;
+padding: 1em;
+}
+.carrusel-galeria{
+max-width: 100%;
+margin: 0 auto;
+padding: 1em;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0px 4px 10px rgb(0,0,0.15);
+}
+.carrusel-galeria img{
+border-radius: 10px;
+object-fit: cover;
+}
+.carousel-item{
+  height: 500px;
+  object-fit: contain;
+  max-height: 550px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+  top: 30%;
+  transform: translateY(-30%);
+  bottom: auto;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%;
+  background-color:  black;
+  padding: 1.2em;
+}
+label {
+font-family:Arial, Helvetica, sans-serif ;
+color:cornflowerblue;
+font-weight:lighter;
+}
+
+input{
+  color:rgb(59, 2, 2);
+  width: 70%;
+}
+input,textarea{
+width: 100%;
+padding: 0.5rem;
+margin: 1rem;
+border-radius: 8px;
+border: 1px solid #ccc;
+}
+legend {
+font-size: 45px;
+font-style: bold;
+}
+footer{
+width: 90%;
+margin: 0 auto;
+}
+
+
+.formulario {
+border-color: aquamarine;
+border-width: 4px;
+border-style: solid;
+border-radius:8px ;
+width: auto;
+margin: 2em auto;
+box-sizing: border-box;
+padding: 1em 2em;
+
+}
+fieldset{
+  border: none;
+  text-align: center;
+}
+
+
+.form-columns .fila{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1.5em;
+margin-bottom: 1.5em;
+}
+.fila label,
+.fila input{
+flex:1 1 48%;
+width: auto;
+margin: 0;
+}
+
+
+.form-file{
+  margin-top: 10px;
+  margin-bottom: 1.5em;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.form-comments textarea{
+  display: block;
+  width:90%;
+  margin:10px auto;
+}
+.form-comments label{
+display: flex;
+justify-content: center;
+}
+.form-buttons{
+display: flex;
+justify-content: center;
+}
+.boton{
+width: 100px;
+padding: 5px;
+border-radius: 10px;
+font-weight: bold;
+margin:8px 10px ;
+}
+.boton:hover{
+color:beige;
+background-color:#150909;
+}
+}
